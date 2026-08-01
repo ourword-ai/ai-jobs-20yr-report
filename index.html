@@ -447,6 +447,8 @@ footer {
 
 /* ---------- 呈现升级（V1.6） ---------- */
 .masthead-home { text-decoration: none; color: inherit; }
+.jump { font-size: 11px; color: var(--ink-50); text-decoration-color: var(--line); white-space: nowrap; }
+#author, #safe-list { scroll-margin-top: 84px; }
 .var { padding: 12px 0; border-bottom: 1px solid var(--line-2); }
 .var:last-of-type { border-bottom: none; padding-bottom: 2px; }
 .var h3 { margin-bottom: 4px; }
@@ -522,7 +524,7 @@ footer {
   <header class="masthead">
     <div class="masthead-row">
       <div class="masthead-title"><a href="#top" class="masthead-home">工作的重构 · 二十年推演</a></div>
-      <div class="masthead-meta" id="mastheadLoc">2026.08 · V1.7</div>
+      <div class="masthead-meta" id="mastheadLoc">2026.08 · V1.8</div>
     </div>
   </header>
 
@@ -531,6 +533,20 @@ footer {
     <div class="eyebrow">深度推演报告 · 2026–2046</div>
     <h1>AI 将如何重塑每一种工作</h1>
     <p class="subtitle">20 类岗位 · 4 个阶段 · 任务束框架 · 暴露度自测 · 可跟踪的信号清单</p>
+
+    <div class="card">
+      <div class="card-title-row">
+        <h3>先给结论：三十秒读完全篇</h3>
+        <span class="card-note">六条最硬的判断 · 点击跳转</span>
+      </div>
+      <div class="sig-row"><span class="sig-num">01</span><div><span class="sig-text">二十年内最确定的事，不是"人被整体替代"，而是<b>职业的入口正在被拆掉</b>——22–25 岁在高暴露岗位的就业已相对下滑 16%，同岗位的资深者反而在增长。</span> <a class="jump" href="#c2">第二章 ›</a></div></div>
+      <div class="sig-row"><span class="sig-num">02</span><div><span class="sig-text">AI 能独立完成的工作长度，<b>每 4–7 个月翻一倍</b>：三年前以分钟计，2026 年初已是一个工作日。若加速持续，全文的时间表还要整体前移。</span> <a class="jump" href="#c3">第三章 ›</a></div></div>
+      <div class="sig-row"><span class="sig-num">03</span><div><span class="sig-text">判断自己的处境只需一个问题：<b>我的日常任务里，可验证、纯数字、无需签字担责的部分占多少？</b>文中有五道题的自测。</span> <a class="jump" href="#quiz">去自测 ›</a></div></div>
+      <div class="sig-row"><span class="sig-num">04</span><div><span class="sig-text">重构度最高的不是程序员，是<b>翻译 92%、客服 90%、行政 88%</b>；最低的是临终关怀 15%、消防急救 18%。未来十年最被低估的路径：维修技工。</span> <a class="jump" href="#c4">第四章 ›</a></div></div>
+      <div class="sig-row"><span class="sig-num">05</span><div><span class="sig-text">二十年不贬值的只有五样：<b>共情、谈判、审美、伦理判断、讲故事</b>——不是 AI 做不了，是人类只从人类那里购买。每一样都附了具体练法。</span> <a class="jump" href="#c5">第五章 ›</a></div></div>
+      <div class="sig-row"><span class="sig-num">06</span><div><span class="sig-text">本报告由 AI 起草，它用同一把尺子量了自己：<b>暴露度 100%，全场最高，恒定资产为零</b>——请据此校准对全文一切判断的信任。</span> <a class="jump" href="#author">利益申报 ›</a></div></div>
+    </div>
+
 
     <p class="lede">预测二十年是狂妄的，但趋势线的斜率是可测的。本报告不猜"哪个岗位会消失"，而是把每个岗位拆开看——一份工作其实是几十个具体任务打的包，用五个变量判断每类任务什么时候会被 AI 接手，再看剩下的任务还能不能撑起一个职业。全部推演锚定在 2026 年年中可查证的公开数据上，并在末尾给出一份"如果这些信号变了，结论就该跟着变"的对照表。</p>
     <p class="lede">先立住三个宏观判断：认知任务先于物理任务；任务自动化先于岗位消失；入门级先于资深级。二十年内最确定的事，不是"人被整体替代"，而是<em>职业的入口正在被拆掉</em>。</p>
@@ -1302,7 +1318,7 @@ footer {
       <div class="safe-row"><span class="sig-num">11</span><div><span class="sig-name">法官 / 监管者</span> <span class="sig-text">判决与监管的合法性只能来自人，AI 可辅助、不可署名；但程序性环节会大幅 AI 化。</span></div><span class="safe-score">33%<span class="score-meter" aria-hidden="true"><i style="width:33%"></i></span></span></div>
       <p class="strategy">压轴一条不参与排序：承担最终风险的企业主。老板无法"被替代"，只会"被竞争"——而 AI 正在把创业门槛砍到史上最低，这个位置在扩容，不在收缩。</p>
     </div>
-    <div class="card">
+    <div class="card" id="author">
       <div class="card-title-row">
         <h3>利益申报：用同一把尺子量作者自己</h3>
         <span class="card-note">本报告由 AI 起草——所以它也该上秤</span>
@@ -1536,7 +1552,7 @@ footer {
     </div>
     <footer>
       <span>工作的重构 · 二十年推演</span>
-      <span>2026.08 · V1.7 · 碱白系统</span>
+      <span>2026.08 · V1.8 · 碱白系统</span>
     </footer>
   </section>
 
