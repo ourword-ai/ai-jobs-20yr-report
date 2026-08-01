@@ -384,6 +384,13 @@ section { margin-bottom: 40px; scroll-margin-top: 84px; }
 .skill-row b { font-weight: 600; }
 .skill-row .why { color: var(--ink-70); }
 
+/* ---------- 恒定五项练法 ---------- */
+.train { padding: 12px 0; border-bottom: 1px solid var(--line-2); }
+.train:last-of-type { border-bottom: none; }
+.train h3 { margin-bottom: 4px; }
+.train p { font-size: 13px; color: var(--ink-70); margin-bottom: 4px; }
+.train p b { color: var(--ink); }
+
 /* ---------- 信号清单 ---------- */
 .sig-row {
   display: grid; grid-template-columns: 26px minmax(0,1fr);
@@ -489,7 +496,7 @@ footer {
   <header class="masthead">
     <div class="masthead-row">
       <div class="masthead-title">工作的重构 · 二十年推演</div>
-      <div class="masthead-meta">2026.08 · V1.2</div>
+      <div class="masthead-meta">2026.08 · V1.3</div>
     </div>
   </header>
 
@@ -1332,7 +1339,51 @@ footer {
 
     <div class="card">
       <div class="card-title-row"><h3>≈ 二十年恒定</h3></div>
-      <p class="muted">共情、谈判、审美、伦理判断、讲故事。这五样东西在过去两千年的技术变迁里没有贬值过——没有理由认为这次会不同。它们不是"AI 做不了"，而是<b>人类只从人类那里购买</b>。</p>
+      <p class="muted">共情、谈判、审美、伦理判断、讲故事。这五样东西在过去两千年的技术变迁里没有贬值过——没有理由认为这次会不同。它们不是"AI 做不了"，而是<b>人类只从人类那里购买</b>。恒定不等于天赋，更不等于不用练——具体练法见下卡。</p>
+    </div>
+    <div class="card">
+      <div class="card-title-row">
+        <h3>给年轻人：恒定五项的具体练法</h3>
+        <span class="card-note">训练结构相同：真实 × 有后果 × 有反馈</span>
+      </div>
+      <p class="muted" style="margin-bottom:4px;">这五项共享同一个训练结构：<b>真实的重复 × 有后果 × 有反馈 × 对照最好的样本</b>。它们都无法靠"看内容"获得，只能靠"对真人做有后果的事"获得——这既是它们不贬值的真正原因，也是练法的总纲。一个反直觉的红利：AI 把执行变便宜之后，"需要判断的场景"会比以往任何一代都更早砸到年轻人头上——以前熬十年才轮到你做的决定，现在两三年就会到。所以这不是修养课，是提前开考的硬考试。</p>
+
+      <div class="train">
+        <h3>共情</h3>
+        <p><span class="mini-label">本质</span>不是心地善良，而是"准确建模他人内在状态"的感知技能——精度可以训练。</p>
+        <p><span class="mini-label">练法</span>给自己立一条复述纪律：重要对话里，先用自己的话复述对方的处境与情绪、问一句"我理解得对吗"，再给意见——每次被纠正都是一条训练数据。再选一个必须面对真实情绪的场景长期泡着（社群运营、支教、照护、一线服务），共情只在"对方的情绪是真的、你的反应有后果"时长肌肉；小说与纪录片是低成本的视角采集器。</p>
+        <p><span class="mini-label">AI 陪练</span>把难搞的对话交给 AI，让它扮演对方立场攻击你的措辞、指出你话里的自我中心——赛前用它，最后一公里必须是真人。</p>
+      </div>
+
+      <div class="train">
+        <h3>谈判</h3>
+        <p><span class="mini-label">本质</span>不是口才，是"在利益冲突下找出双方真实需求并设计交换"的结构化技能——五项里方法论最成熟、最可速成的一项。</p>
+        <p><span class="mini-label">练法</span>每月强制自己完成一次真实的小额谈判（房租、二手、薪资、换班），被拒绝是学费不是失败。每次开谈前写三行：我的退路是什么、对方真正要的可能是什么、我有哪些非金钱筹码；谈完补一行复盘——哪句话改变了走向。方法论读一本经典就够，读完立刻用，不囤积理论。</p>
+        <p><span class="mini-label">AI 陪练</span>赛前让 AI 扮演最难缠的对手陪你打三轮、替你预演所有反驳——这是史上最便宜的谈判陪练场。</p>
+      </div>
+
+      <div class="train">
+        <h3>审美</h3>
+        <p><span class="mini-label">本质</span>大量接触好东西之后被压缩的判断力。变量只有两个：输入的质量、选择的次数。</p>
+        <p><span class="mini-label">练法</span>立一条收藏纪律：每周存三件让你停下来的同领域作品，并强迫自己写一句"它好在哪"——说不出理由的喜欢是情绪，不是品味。把消费时间从信息流迁到你领域公认的前 1% 作品上；每次自己做完东西，跟收藏里最好的那件并排放——差距感知，就是品味生长的地方。</p>
+        <p><span class="mini-label">AI 陪练</span>让 AI 一口气出十个方案、你来选并写明理由——生成的廉价化让"选择的练习量"暴涨，这是历史上练品味成本最低的时代。</p>
+      </div>
+
+      <div class="train">
+        <h3>伦理判断</h3>
+        <p><span class="mini-label">本质</span>不是背条款，是在灰色地带权衡多方利益、并愿意为决定署名的能力。</p>
+        <p><span class="mini-label">练法</span>职级低时主动抢"没有标准答案"的决定（资源怎么分、坏消息怎么讲、规则要不要破例）——后果小的时候，恰是练习成本最低的时候。建一份决策日志：每个灰色决定写下当时的理由，三个月后回看，你会看见自己系统性的偏差。做重要决定前，找一个利益与你相反的人，把他的话听完。</p>
+        <p><span class="mini-label">AI 陪练</span>让 AI 轮流站在每个利益相关方的立场质询你的方案——给自己当红队。但署名与承担，必须是你。</p>
+      </div>
+
+      <div class="train">
+        <h3>讲故事</h3>
+        <p><span class="mini-label">本质</span>把复杂的真，变成别人愿意听、记得住、会转述的结构——注意力稀缺时代的分发能力。</p>
+        <p><span class="mini-label">练法</span>定一个公开输出的节律（周报、给团队讲方案、对外发帖都算）——这是表演型技能，只在有观众时进步，观众走神就是最诚实的反馈。拆解二十个打动过你的表达，还原它的结构：钩子、张力、具体细节、落点。刻意练"具体"：把每个抽象词换成场景或数字——"效率提升了"，不如"以前三天，现在下班前"。</p>
+        <p><span class="mini-label">AI 陪练</span>AI 能把你的故事打磨得更顺，但素材必须是你的第一手经历——本章说过，第一手经验是不可合成的稀缺品。讲一个 AI 也能编出来的故事，没有价值。</p>
+      </div>
+
+      <p class="strategy">复利提示：这五项是复利资产——25 岁开始练与 35 岁开始练，到 45 岁会差出一个量级。这正是"恒定"留给年轻人的不对称优势。</p>
     </div>
   </section>
 
@@ -1380,7 +1431,7 @@ footer {
 
     <div class="card">
       <div class="card-title-row"><h3>学生 / 求职者</h3><span class="chip chip-soon">风险 · 入口塌陷</span></div>
-      <p class="muted">你的最大风险不是失业，是"从初级干起"的路径正在消失。对策：<b>①</b> 用 AI 做出超越年龄的作品集——作品大于学历的时代对你有利；<b>②</b> 在方向选择上配置一个"有责任沉淀点或物理属性"的底仓（医、法、工程、技工、照护）；<b>③</b> 把"带着 AI 工作"练成母语而非外语——你与上一代人的代差就在这里。</p>
+      <p class="muted">你的最大风险不是失业，是"从初级干起"的路径正在消失。对策：<b>①</b> 用 AI 做出超越年龄的作品集——作品大于学历的时代对你有利；<b>②</b> 在方向选择上配置一个"有责任沉淀点或物理属性"的底仓（医、法、工程、技工、照护）；<b>③</b> 把"带着 AI 工作"练成母语而非外语——你与上一代人的代差就在这里。另外，第五章末尾那五项恒定能力的练法，越早开始，复利越大。</p>
     </div>
     <div class="card">
       <div class="card-title-row"><h3>早期职业（0–5 年）</h3><span class="chip chip-soon">风险 · 与 AI 抢同层任务</span></div>
@@ -1407,7 +1458,7 @@ footer {
     </div>
     <footer>
       <span>工作的重构 · 二十年推演</span>
-      <span>2026.08 · V1.2 · 碱白系统</span>
+      <span>2026.08 · V1.3 · 碱白系统</span>
     </footer>
   </section>
 
