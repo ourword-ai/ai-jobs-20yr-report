@@ -445,6 +445,21 @@ footer {
 }
 .quiz-advice { font-size: 13px; color: var(--ink-70); flex: 1 1 240px; }
 
+/* ---------- 呈现升级（V1.6） ---------- */
+.masthead-home { text-decoration: none; color: inherit; }
+.var { padding: 12px 0; border-bottom: 1px solid var(--line-2); }
+.var:last-of-type { border-bottom: none; padding-bottom: 2px; }
+.var h3 { margin-bottom: 4px; }
+.var p { margin: 0; }
+.score-meter {
+  display: block; position: relative; height: 3px; border-radius: 2px;
+  background: #efefec; margin-top: 5px; overflow: hidden;
+}
+.score-meter i {
+  position: absolute; top: 0; bottom: 0; left: 0; border-radius: 2px;
+  background: #c6c7c4; /* 实底换算：25% 墨叠暖白 */
+}
+
 /* ---------- 响应式 ---------- */
 @media (max-width: 640px) {
   .page { padding: 28px 16px 64px; }
@@ -495,8 +510,8 @@ footer {
   <!-- ============ 悬浮头部 ============ -->
   <header class="masthead">
     <div class="masthead-row">
-      <div class="masthead-title">工作的重构 · 二十年推演</div>
-      <div class="masthead-meta">2026.08 · V1.5</div>
+      <div class="masthead-title"><a href="#top" class="masthead-home">工作的重构 · 二十年推演</a></div>
+      <div class="masthead-meta" id="mastheadLoc">2026.08 · V1.6</div>
     </div>
   </header>
 
@@ -589,18 +604,18 @@ footer {
 
     <div class="card">
       <h3 style="margin-bottom:8px;">判断任务自动化时点的五个变量</h3>
-      <p class="muted"><b>① 数字化程度。</b>输入与输出能否完全数字化？翻译接近 100%，水管维修接近 0。机器人学有个著名的"莫拉维克悖论"：对 AI 来说微积分容易、拧水管难——因为算数是人类近几千年才学会的新本事，而伸手抓东西是亿万年进化打磨出的本能，越是本能，越难教给机器。二十年内，物理世界的自动化整体滞后认知世界一个身位。</p>
-      <p class="muted"><b>② 可验证性。</b>产出的对错能否又快又便宜地判定？代码一跑测试就知道对错，所以编程 AI 进步最快；"这个战略好不好"要等一年才见分晓，AI 在这里就快不起来。<b>这是被大众讨论低估最多的变量：对错验证得越快的任务，被 AI 拿下得越快。</b></p>
-      <p class="muted"><b>③ 责任与牌照。</b>出了错，法律要求必须有一个具体的、有执照的人签字担责——处方要医师签，审计报告要注册会计师签，飞机要机长签。本报告把这个位置叫"责任沉淀点"。AI 可以干活，但在法律改变之前坐不进那把签字的椅子；所以这类岗位的工作内容会剧变，岗位本身却很难消失。</p>
-      <p class="muted"><b>④ 数据可得性。</b>AI 靠"看过海量同类工作的记录"来学会一件事。文字工作的记录在互联网上堆成山，但"手上的动作与手感"几乎没被记录过——机器人行业正在补这门课，补课速度决定第三阶段何时到来。</p>
-      <p class="muted"><b>⑤ 需求弹性。</b>东西变便宜后，大家会不会买更多？软件会：造得越便宜，世界想要的软件越多，岗位短期反而扩张——这叫"杰文斯效应"，名字来自 19 世纪经济学家杰文斯的发现：蒸汽机让烧煤更省，英国的煤炭总消耗反而大涨，因为便宜了人人烧得起。翻译不会：世界一年就那么多东西要翻，成本下降直接变成岗位消失。同一场降价，落在这两类行业上，就业结果完全相反。</p>
+      <div class="var"><h3>① 数字化程度</h3><p class="muted">输入与输出能否完全数字化？翻译接近 100%，水管维修接近 0。机器人学有个著名的"莫拉维克悖论"：对 AI 来说微积分容易、拧水管难——因为算数是人类近几千年才学会的新本事，而伸手抓东西是亿万年进化打磨出的本能，越是本能，越难教给机器。二十年内，物理世界的自动化整体滞后认知世界一个身位。</p></div>
+      <div class="var"><h3>② 可验证性</h3><p class="muted">产出的对错能否又快又便宜地判定？代码一跑测试就知道对错，所以编程 AI 进步最快；"这个战略好不好"要等一年才见分晓，AI 在这里就快不起来。<b>这是被大众讨论低估最多的变量：对错验证得越快的任务，被 AI 拿下得越快。</b></p></div>
+      <div class="var"><h3>③ 责任与牌照</h3><p class="muted">出了错，法律要求必须有一个具体的、有执照的人签字担责——处方要医师签，审计报告要注册会计师签，飞机要机长签。本报告把这个位置叫"责任沉淀点"。AI 可以干活，但在法律改变之前坐不进那把签字的椅子；所以这类岗位的工作内容会剧变，岗位本身却很难消失。</p></div>
+      <div class="var"><h3>④ 数据可得性</h3><p class="muted">AI 靠"看过海量同类工作的记录"来学会一件事。文字工作的记录在互联网上堆成山，但"手上的动作与手感"几乎没被记录过——机器人行业正在补这门课，补课速度决定第三阶段何时到来。</p></div>
+      <div class="var"><h3>⑤ 需求弹性</h3><p class="muted">东西变便宜后，大家会不会买更多？软件会：造得越便宜，世界想要的软件越多，岗位短期反而扩张——这叫"杰文斯效应"，名字来自 19 世纪经济学家杰文斯的发现：蒸汽机让烧煤更省，英国的煤炭总消耗反而大涨，因为便宜了人人烧得起。翻译不会：世界一年就那么多东西要翻，成本下降直接变成岗位消失。同一场降价，落在这两类行业上，就业结果完全相反。</p></div>
     </div>
 
     <div class="card">
       <h3 style="margin-bottom:8px;">两个必须内化的形状</h3>
-      <p class="muted"><b>锯齿边界。</b>AI 的能力不是均匀上涨的水位，而是锯齿：同一岗位内部，有的任务被秒杀，有的完全做不了，而且事先很难猜准是哪些。哈佛与波士顿咨询对 758 名顾问做过一场对照实验：在 AI 擅长的任务上，用 AI 的顾问产出质量被评高约 40%、速度快 25%；而在 AI 不擅长的任务上，用 AI 的人答对率反而低了 19 个百分点——因为他们信了不该信的答案。所以"岗位没消失、但内容剧变"会是常态，而"知道什么时候不能信 AI"本身就是新技能。</p>
-      <p class="muted"><b>入口塌陷。</b>AI 最先吃掉的恰好是初级岗位赖以存在的任务（检索、初稿、基础实现、标准流程）。资深者用它增强自己，新人却发现"从初级干起"的梯子第一级不见了。这不是理论——它已经出现在工资单数据里（见第二章）。</p>
-      <p class="muted" style="margin-top:6px;"><b>推论：</b>判断自己岗位的命运，别问"AI 会不会取代我"，问"<em>我的任务束里，可验证、纯数字、无需责任签字的部分占多少</em>"。那个比例，就是你未来五年工作内容的重构下限。</p>
+      <div class="var"><h3>锯齿边界</h3><p class="muted">AI 的能力不是均匀上涨的水位，而是锯齿：同一岗位内部，有的任务被秒杀，有的完全做不了，而且事先很难猜准是哪些。哈佛与波士顿咨询对 758 名顾问做过一场对照实验：在 AI 擅长的任务上，用 AI 的顾问产出质量被评高约 40%、速度快 25%；而在 AI 不擅长的任务上，用 AI 的人答对率反而低了 19 个百分点——因为他们信了不该信的答案。所以"岗位没消失、但内容剧变"会是常态，而"知道什么时候不能信 AI"本身就是新技能。</p></div>
+      <div class="var"><h3>入口塌陷</h3><p class="muted">AI 最先吃掉的恰好是初级岗位赖以存在的任务（检索、初稿、基础实现、标准流程）。资深者用它增强自己，新人却发现"从初级干起"的梯子第一级不见了。这不是理论——它已经出现在工资单数据里（见第二章）。</p></div>
+      <p class="strategy" style="margin-top:12px;">推论：判断自己岗位的命运，别问"AI 会不会取代我"，问"我的日常任务里，可验证、纯数字、无需签字担责的部分占多少"——那个比例，就是你未来五年工作内容的重构下限。</p>
     </div>
   </section>
 
@@ -728,7 +743,7 @@ footer {
         <button class="role-head" type="button" aria-expanded="false" aria-controls="d-swe">
           <span class="role-name">软件工程师</span>
           <span class="role-chip-cell"><span class="chip chip-soon">已开始</span></span>
-          <span class="role-score">85%</span>
+          <span class="role-score">85%<span class="score-meter" aria-hidden="true"><i style="width:85%"></i></span></span>
           <span class="role-caret" aria-hidden="true"><svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M4 2l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
         </button>
         <div class="role-detail" id="d-swe" role="region" aria-label="软件工程师 详情"><div><div class="role-inner">
@@ -752,7 +767,7 @@ footer {
         <button class="role-head" type="button" aria-expanded="false" aria-controls="d-da">
           <span class="role-name">数据分析师</span>
           <span class="role-chip-cell"><span class="chip chip-soon">已开始</span></span>
-          <span class="role-score">80%</span>
+          <span class="role-score">80%<span class="score-meter" aria-hidden="true"><i style="width:80%"></i></span></span>
           <span class="role-caret" aria-hidden="true"><svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M4 2l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
         </button>
         <div class="role-detail" id="d-da" role="region" aria-label="数据分析师 详情"><div><div class="role-inner">
@@ -776,7 +791,7 @@ footer {
         <button class="role-head" type="button" aria-expanded="false" aria-controls="d-ml">
           <span class="role-name">算法 / 机器学习工程师</span>
           <span class="role-chip-cell"><span class="chip chip-soon">0–3 年</span></span>
-          <span class="role-score">60%</span>
+          <span class="role-score">60%<span class="score-meter" aria-hidden="true"><i style="width:60%"></i></span></span>
           <span class="role-caret" aria-hidden="true"><svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M4 2l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
         </button>
         <div class="role-detail" id="d-ml" role="region" aria-label="算法工程师 详情"><div><div class="role-inner">
@@ -800,7 +815,7 @@ footer {
         <button class="role-head" type="button" aria-expanded="false" aria-controls="d-pm">
           <span class="role-name">产品经理</span>
           <span class="role-chip-cell"><span class="chip chip-soon">0–3 年</span></span>
-          <span class="role-score">65%</span>
+          <span class="role-score">65%<span class="score-meter" aria-hidden="true"><i style="width:65%"></i></span></span>
           <span class="role-caret" aria-hidden="true"><svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M4 2l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
         </button>
         <div class="role-detail" id="d-pm" role="region" aria-label="产品经理 详情"><div><div class="role-inner">
@@ -833,7 +848,7 @@ footer {
         <button class="role-head" type="button" aria-expanded="false" aria-controls="d-copy">
           <span class="role-name">内容营销 / 文案</span>
           <span class="role-chip-cell"><span class="chip chip-soon">已开始</span></span>
-          <span class="role-score">85%</span>
+          <span class="role-score">85%<span class="score-meter" aria-hidden="true"><i style="width:85%"></i></span></span>
           <span class="role-caret" aria-hidden="true"><svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M4 2l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
         </button>
         <div class="role-detail" id="d-copy" role="region" aria-label="内容营销 详情"><div><div class="role-inner">
@@ -857,7 +872,7 @@ footer {
         <button class="role-head" type="button" aria-expanded="false" aria-controls="d-design">
           <span class="role-name">UI / 平面设计师</span>
           <span class="role-chip-cell"><span class="chip chip-soon">已开始</span></span>
-          <span class="role-score">75%</span>
+          <span class="role-score">75%<span class="score-meter" aria-hidden="true"><i style="width:75%"></i></span></span>
           <span class="role-caret" aria-hidden="true"><svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M4 2l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
         </button>
         <div class="role-detail" id="d-design" role="region" aria-label="设计师 详情"><div><div class="role-inner">
@@ -881,7 +896,7 @@ footer {
         <button class="role-head" type="button" aria-expanded="false" aria-controls="d-trans">
           <span class="role-name">翻译 / 本地化</span>
           <span class="role-chip-cell"><span class="chip chip-soon">已开始</span></span>
-          <span class="role-score">92%</span>
+          <span class="role-score">92%<span class="score-meter" aria-hidden="true"><i style="width:92%"></i></span></span>
           <span class="role-caret" aria-hidden="true"><svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M4 2l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
         </button>
         <div class="role-detail" id="d-trans" role="region" aria-label="翻译 详情"><div><div class="role-inner">
@@ -905,7 +920,7 @@ footer {
         <button class="role-head" type="button" aria-expanded="false" aria-controls="d-video">
           <span class="role-name">影视 / 视频制作</span>
           <span class="role-chip-cell"><span class="chip chip-soon">0–3 年</span></span>
-          <span class="role-score">70%</span>
+          <span class="role-score">70%<span class="score-meter" aria-hidden="true"><i style="width:70%"></i></span></span>
           <span class="role-caret" aria-hidden="true"><svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M4 2l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
         </button>
         <div class="role-detail" id="d-video" role="region" aria-label="影视 详情"><div><div class="role-inner">
@@ -938,7 +953,7 @@ footer {
         <button class="role-head" type="button" aria-expanded="false" aria-controls="d-law">
           <span class="role-name">律师</span>
           <span class="role-chip-cell"><span class="chip chip-mid">3–7 年</span></span>
-          <span class="role-score">60%</span>
+          <span class="role-score">60%<span class="score-meter" aria-hidden="true"><i style="width:60%"></i></span></span>
           <span class="role-caret" aria-hidden="true"><svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M4 2l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
         </button>
         <div class="role-detail" id="d-law" role="region" aria-label="律师 详情"><div><div class="role-inner">
@@ -962,7 +977,7 @@ footer {
         <button class="role-head" type="button" aria-expanded="false" aria-controls="d-doc">
           <span class="role-name">医生</span>
           <span class="role-chip-cell"><span class="chip chip-mid">3–7 年</span></span>
-          <span class="role-score">50%</span>
+          <span class="role-score">50%<span class="score-meter" aria-hidden="true"><i style="width:50%"></i></span></span>
           <span class="role-caret" aria-hidden="true"><svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M4 2l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
         </button>
         <div class="role-detail" id="d-doc" role="region" aria-label="医生 详情"><div><div class="role-inner">
@@ -986,7 +1001,7 @@ footer {
         <button class="role-head" type="button" aria-expanded="false" aria-controls="d-acc">
           <span class="role-name">会计 / 审计</span>
           <span class="role-chip-cell"><span class="chip chip-soon">0–3 年</span></span>
-          <span class="role-score">78%</span>
+          <span class="role-score">78%<span class="score-meter" aria-hidden="true"><i style="width:78%"></i></span></span>
           <span class="role-caret" aria-hidden="true"><svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M4 2l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
         </button>
         <div class="role-detail" id="d-acc" role="region" aria-label="会计 详情"><div><div class="role-inner">
@@ -1010,7 +1025,7 @@ footer {
         <button class="role-head" type="button" aria-expanded="false" aria-controls="d-fin">
           <span class="role-name">金融分析师 / 投研</span>
           <span class="role-chip-cell"><span class="chip chip-soon">0–3 年</span></span>
-          <span class="role-score">72%</span>
+          <span class="role-score">72%<span class="score-meter" aria-hidden="true"><i style="width:72%"></i></span></span>
           <span class="role-caret" aria-hidden="true"><svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M4 2l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
         </button>
         <div class="role-detail" id="d-fin" role="region" aria-label="金融分析师 详情"><div><div class="role-inner">
@@ -1043,7 +1058,7 @@ footer {
         <button class="role-head" type="button" aria-expanded="false" aria-controls="d-cs">
           <span class="role-name">客服</span>
           <span class="role-chip-cell"><span class="chip chip-soon">已开始</span></span>
-          <span class="role-score">90%</span>
+          <span class="role-score">90%<span class="score-meter" aria-hidden="true"><i style="width:90%"></i></span></span>
           <span class="role-caret" aria-hidden="true"><svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M4 2l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
         </button>
         <div class="role-detail" id="d-cs" role="region" aria-label="客服 详情"><div><div class="role-inner">
@@ -1067,7 +1082,7 @@ footer {
         <button class="role-head" type="button" aria-expanded="false" aria-controls="d-admin">
           <span class="role-name">行政 / 文员 / 数据录入</span>
           <span class="role-chip-cell"><span class="chip chip-soon">已开始</span></span>
-          <span class="role-score">88%</span>
+          <span class="role-score">88%<span class="score-meter" aria-hidden="true"><i style="width:88%"></i></span></span>
           <span class="role-caret" aria-hidden="true"><svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M4 2l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
         </button>
         <div class="role-detail" id="d-admin" role="region" aria-label="行政文员 详情"><div><div class="role-inner">
@@ -1091,7 +1106,7 @@ footer {
         <button class="role-head" type="button" aria-expanded="false" aria-controls="d-sales">
           <span class="role-name">销售</span>
           <span class="role-chip-cell"><span class="chip chip-mid">3–7 年</span></span>
-          <span class="role-score">55%</span>
+          <span class="role-score">55%<span class="score-meter" aria-hidden="true"><i style="width:55%"></i></span></span>
           <span class="role-caret" aria-hidden="true"><svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M4 2l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
         </button>
         <div class="role-detail" id="d-sales" role="region" aria-label="销售 详情"><div><div class="role-inner">
@@ -1115,7 +1130,7 @@ footer {
         <button class="role-head" type="button" aria-expanded="false" aria-controls="d-teach">
           <span class="role-name">教师</span>
           <span class="role-chip-cell"><span class="chip chip-mid">3–7 年</span></span>
-          <span class="role-score">55%</span>
+          <span class="role-score">55%<span class="score-meter" aria-hidden="true"><i style="width:55%"></i></span></span>
           <span class="role-caret" aria-hidden="true"><svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M4 2l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
         </button>
         <div class="role-detail" id="d-teach" role="region" aria-label="教师 详情"><div><div class="role-inner">
@@ -1139,7 +1154,7 @@ footer {
         <button class="role-head" type="button" aria-expanded="false" aria-controls="d-mgr">
           <span class="role-name">中层管理者</span>
           <span class="role-chip-cell"><span class="chip chip-mid">3–7 年</span></span>
-          <span class="role-score">62%</span>
+          <span class="role-score">62%<span class="score-meter" aria-hidden="true"><i style="width:62%"></i></span></span>
           <span class="role-caret" aria-hidden="true"><svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M4 2l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
         </button>
         <div class="role-detail" id="d-mgr" role="region" aria-label="管理者 详情"><div><div class="role-inner">
@@ -1163,7 +1178,7 @@ footer {
         <button class="role-head" type="button" aria-expanded="false" aria-controls="d-care">
           <span class="role-name">心理咨询 / 照护</span>
           <span class="role-chip-cell"><span class="chip chip-late">7–12 年</span></span>
-          <span class="role-score">35%</span>
+          <span class="role-score">35%<span class="score-meter" aria-hidden="true"><i style="width:35%"></i></span></span>
           <span class="role-caret" aria-hidden="true"><svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M4 2l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
         </button>
         <div class="role-detail" id="d-care" role="region" aria-label="照护 详情"><div><div class="role-inner">
@@ -1196,7 +1211,7 @@ footer {
         <button class="role-head" type="button" aria-expanded="false" aria-controls="d-trade">
           <span class="role-name">蓝领技工（电工 / 水暖 / 维修）</span>
           <span class="role-chip-cell"><span class="chip chip-late">12–20 年</span></span>
-          <span class="role-score">30%</span>
+          <span class="role-score">30%<span class="score-meter" aria-hidden="true"><i style="width:30%"></i></span></span>
           <span class="role-caret" aria-hidden="true"><svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M4 2l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
         </button>
         <div class="role-detail" id="d-trade" role="region" aria-label="技工 详情"><div><div class="role-inner">
@@ -1219,7 +1234,7 @@ footer {
         <button class="role-head" type="button" aria-expanded="false" aria-controls="d-logi">
           <span class="role-name">制造 / 仓储 / 物流（含司机）</span>
           <span class="role-chip-cell"><span class="chip chip-mid">3–7 年</span></span>
-          <span class="role-score">68%</span>
+          <span class="role-score">68%<span class="score-meter" aria-hidden="true"><i style="width:68%"></i></span></span>
           <span class="role-caret" aria-hidden="true"><svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M4 2l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
         </button>
         <div class="role-detail" id="d-logi" role="region" aria-label="物流 详情"><div><div class="role-inner">
@@ -1267,7 +1282,7 @@ footer {
         <button class="role-head" type="button" aria-expanded="false" aria-controls="d-self">
           <span class="role-name">AI 助手（本报告的作者）</span>
           <span class="role-chip-cell"><span class="chip chip-soon">已开始</span></span>
-          <span class="role-score">98%</span>
+          <span class="role-score">98%<span class="score-meter" aria-hidden="true"><i style="width:98%"></i></span></span>
           <span class="role-caret" aria-hidden="true"><svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M4 2l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
         </button>
         <div class="role-detail" id="d-self" role="region" aria-label="AI 助手 详情"><div><div class="role-inner">
@@ -1490,7 +1505,7 @@ footer {
     </div>
     <footer>
       <span>工作的重构 · 二十年推演</span>
-      <span>2026.08 · V1.5 · 碱白系统</span>
+      <span>2026.08 · V1.6 · 碱白系统</span>
     </footer>
   </section>
 
@@ -1579,6 +1594,24 @@ function quizRender() {
     scoreEl.style.color = 'var(--down)';
     advEl.textContent = '高暴露。你与集群 A / B 同处震中——立即启动从执行者到验收者的转型，并盯紧第六章信号 01 至 03。';
   }
+}
+
+/* 长文导航：右上角实时显示当前章节；点标题回到顶部 */
+var locEl = document.getElementById('mastheadLoc');
+if (locEl && 'IntersectionObserver' in window) {
+  var home = locEl.textContent;
+  var locs = [['top', home], ['c1','第一章 · 框架'], ['c2','第二章 · 证据'], ['c3','第三章 · 阶段'],
+              ['c4','第四章 · 岗位'], ['quiz','附 · 自测'], ['c5','第五章 · 技能'],
+              ['c6','第六章 · 信号'], ['c7','第七章 · 反方'], ['c8','第八章 · 行动'], ['c9','尾注']];
+  var spy = new IntersectionObserver(function (es) {
+    es.forEach(function (e) {
+      if (e.isIntersecting) locEl.textContent = e.target.getAttribute('data-loc');
+    });
+  }, { rootMargin: '-70px 0px -72% 0px' });
+  locs.forEach(function (l) {
+    var el = document.getElementById(l[0]);
+    if (el) { el.setAttribute('data-loc', l[1]); spy.observe(el); }
+  });
 }
 </script>
 </body>
