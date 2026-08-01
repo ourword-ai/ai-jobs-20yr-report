@@ -496,7 +496,7 @@ footer {
   <header class="masthead">
     <div class="masthead-row">
       <div class="masthead-title">工作的重构 · 二十年推演</div>
-      <div class="masthead-meta">2026.08 · V1.3</div>
+      <div class="masthead-meta">2026.08 · V1.4</div>
     </div>
   </header>
 
@@ -506,13 +506,13 @@ footer {
     <h1>AI 将如何重塑每一种工作</h1>
     <p class="subtitle">20 类岗位 · 4 个阶段 · 任务束框架 · 暴露度自测 · 可跟踪的信号清单</p>
 
-    <p class="lede">预测二十年是狂妄的，但趋势线的斜率是可测的。本报告不猜"哪个岗位会消失"，而是把每个岗位拆成任务束，用五个变量判断每束任务的自动化时点，再看剩下的任务能否撑起一个职业。全部推演锚定在 2026 年年中可查证的公开数据上，并在末尾给出一份"如果这些信号变了，结论就该跟着变"的对照表。</p>
+    <p class="lede">预测二十年是狂妄的，但趋势线的斜率是可测的。本报告不猜"哪个岗位会消失"，而是把每个岗位拆开看——一份工作其实是几十个具体任务打的包，用五个变量判断每类任务什么时候会被 AI 接手，再看剩下的任务还能不能撑起一个职业。全部推演锚定在 2026 年年中可查证的公开数据上，并在末尾给出一份"如果这些信号变了，结论就该跟着变"的对照表。</p>
     <p class="lede">先立住三个宏观判断：认知任务先于物理任务；任务自动化先于岗位消失；入门级先于资深级。二十年内最确定的事，不是"人被整体替代"，而是<em>职业的入口正在被拆掉</em>。</p>
 
     <div class="card" style="margin-top:18px;">
       <div class="eyebrow">最硬的一条趋势线</div>
       <div class="big-num">×2 <span class="big-num-unit">/ 每 4–7 个月</span></div>
-      <div class="big-num-caption">AI 能以 50% 可靠性自主完成的任务时长（按人类专家耗时计）的翻倍周期。2019–2025 约 7 个月一倍；2024 年以来已加速到约 4 个月。</div>
+      <div class="big-num-caption">给 AI 一个任务，它有五成把握独立做完——这种任务的"长度"（按人类专家做完要多久来计）每 4–7 个月翻一倍：2019–2025 约 7 个月一倍，2024 年以来已加速到约 4 个月。</div>
 
       <div class="meter-table" id="meterTable">
         <div class="meter-row">
@@ -541,14 +541,14 @@ footer {
           <div class="meter-val">约 14.5 小时</div>
         </div>
       </div>
-      <div class="meter-foot">条长为对数刻度 · 50% 可靠性口径 · 来源：METR 时长曲线研究。注意：要求 80% 可靠性时，可完成时长约缩短为四分之一——demo 与生产之间隔着可靠性长尾，这是全篇反复出现的约束。</div>
+      <div class="meter-foot">条长按对数压缩（否则 2019 年那条会短到看不见）· 口径为"五成成功率" · 来源：METR 时长曲线研究。注意：若要求八成成功率，可完成时长约缩短为四分之一——演示能跑，不等于上班能用，这是全篇反复出现的约束。</div>
     </div>
 
     <div class="card">
       <div class="stat-trio">
         <div class="stat">
           <div class="stat-num" style="color:var(--down)">−16%</div>
-          <div class="stat-label">22–25 岁在高 AI 暴露岗位的相对就业变化（控制企业冲击后）；同岗位资深者持平或增长</div>
+          <div class="stat-label">22–25 岁在受 AI 影响最深岗位上的就业相对变化（已排除公司自身经营波动的影响）；同岗位的资深者持平或增长</div>
           <div class="stat-src">斯坦福数字经济实验室 · ADP 工资单数据</div>
         </div>
         <div class="stat">
@@ -585,20 +585,20 @@ footer {
   <section id="c1">
     <div class="eyebrow">第一章</div>
     <div class="section-head"><h2>分析框架：岗位是任务束，不是一个整体</h2></div>
-    <p class="section-lede">经济学家 David Autor 的任务框架是全篇的地基：AI 不按"岗位"吃，按"任务"吃。一个岗位的命运 = 任务束被侵蚀的速度 × 剩余任务的价值 × 该行业的需求弹性。</p>
+    <p class="section-lede">经济学家 David Autor 的核心发现是全篇的地基：一份工作其实是几十个具体任务打的包。以会计为例——记账、对账、报税、跟客户解释、安抚老板，AI 不会一口吞掉"会计"这个岗位，而是一项一项地吃掉里面的任务。所以岗位的命运 = 任务被吃掉的速度 × 剩下的任务值多少钱 × 这行的活会不会因为变便宜而变多。</p>
 
     <div class="card">
       <h3 style="margin-bottom:8px;">判断任务自动化时点的五个变量</h3>
-      <p class="muted"><b>① 数字化程度。</b>输入与输出能否完全数字化？翻译接近 100%，水管维修接近 0。莫拉维克悖论在二十年尺度上依然成立：对 AI 来说，微积分容易，拧水管难——物理世界的自动化整体滞后认知世界一个身位。</p>
-      <p class="muted"><b>② 可验证性。</b>产出的对错能否低成本判定？代码可以跑测试，所以编程智能体迭代最快；战略建议无法即时验证，人的判断仍是瓶颈。<b>这是被大众讨论低估最多的变量：可验证性直接决定智能体化的速度。</b></p>
-      <p class="muted"><b>③ 责任与牌照。</b>出了错谁承担法律责任？医疗、审计、法律、飞行都存在"责任沉淀点"——法律要求持照自然人签字。这类岗位的工作内容会剧变，但签字的位置在监管改变前不会移动。</p>
-      <p class="muted"><b>④ 数据可得性。</b>该任务的过程数据是否已在互联网上大量存在？文本过剩，动作与手感数据稀缺——机器人行业正在补这门课，补课速度决定第三阶段何时到来。</p>
-      <p class="muted"><b>⑤ 需求弹性。</b>成本降十倍，需求会涨几倍？软件受杰文斯效应支撑，短期需求扩张；翻译弹性低，成本下降直接转化为岗位挤出。同样的技术冲击，落在不同弹性的行业上，就业结果完全相反。</p>
+      <p class="muted"><b>① 数字化程度。</b>输入与输出能否完全数字化？翻译接近 100%，水管维修接近 0。机器人学有个著名的"莫拉维克悖论"：对 AI 来说微积分容易、拧水管难——因为算数是人类近几千年才学会的新本事，而伸手抓东西是亿万年进化打磨出的本能，越是本能，越难教给机器。二十年内，物理世界的自动化整体滞后认知世界一个身位。</p>
+      <p class="muted"><b>② 可验证性。</b>产出的对错能否又快又便宜地判定？代码一跑测试就知道对错，所以编程 AI 进步最快；"这个战略好不好"要等一年才见分晓，AI 在这里就快不起来。<b>这是被大众讨论低估最多的变量：对错验证得越快的任务，被 AI 拿下得越快。</b></p>
+      <p class="muted"><b>③ 责任与牌照。</b>出了错，法律要求必须有一个具体的、有执照的人签字担责——处方要医师签，审计报告要注册会计师签，飞机要机长签。本报告把这个位置叫"责任沉淀点"。AI 可以干活，但在法律改变之前坐不进那把签字的椅子；所以这类岗位的工作内容会剧变，岗位本身却很难消失。</p>
+      <p class="muted"><b>④ 数据可得性。</b>AI 靠"看过海量同类工作的记录"来学会一件事。文字工作的记录在互联网上堆成山，但"手上的动作与手感"几乎没被记录过——机器人行业正在补这门课，补课速度决定第三阶段何时到来。</p>
+      <p class="muted"><b>⑤ 需求弹性。</b>东西变便宜后，大家会不会买更多？软件会：造得越便宜，世界想要的软件越多，岗位短期反而扩张——这叫"杰文斯效应"，名字来自 19 世纪经济学家杰文斯的发现：蒸汽机让烧煤更省，英国的煤炭总消耗反而大涨，因为便宜了人人烧得起。翻译不会：世界一年就那么多东西要翻，成本下降直接变成岗位消失。同一场降价，落在这两类行业上，就业结果完全相反。</p>
     </div>
 
     <div class="card">
       <h3 style="margin-bottom:8px;">两个必须内化的形状</h3>
-      <p class="muted"><b>锯齿边界。</b>AI 能力不是均匀上涨的水位，而是锯齿：同一岗位内部，有的任务被秒杀，有的完全做不了。所以"岗位没消失但内容剧变"会是未来十年的常态，而不是过渡态。</p>
+      <p class="muted"><b>锯齿边界。</b>AI 的能力不是均匀上涨的水位，而是锯齿：同一岗位内部，有的任务被秒杀，有的完全做不了，而且事先很难猜准是哪些。哈佛与波士顿咨询对 758 名顾问做过一场对照实验：在 AI 擅长的任务上，用 AI 的顾问产出质量被评高约 40%、速度快 25%；而在 AI 不擅长的任务上，用 AI 的人答对率反而低了 19 个百分点——因为他们信了不该信的答案。所以"岗位没消失、但内容剧变"会是常态，而"知道什么时候不能信 AI"本身就是新技能。</p>
       <p class="muted"><b>入口塌陷。</b>AI 最先吃掉的恰好是初级岗位赖以存在的任务（检索、初稿、基础实现、标准流程）。资深者用它增强自己，新人却发现"从初级干起"的梯子第一级不见了。这不是理论——它已经出现在工资单数据里（见第二章）。</p>
       <p class="muted" style="margin-top:6px;"><b>推论：</b>判断自己岗位的命运，别问"AI 会不会取代我"，问"<em>我的任务束里，可验证、纯数字、无需责任签字的部分占多少</em>"。那个比例，就是你未来五年工作内容的重构下限。</p>
     </div>
@@ -621,7 +621,7 @@ footer {
       <div class="evi-row">
         <div>
           <div class="evi-src">斯坦福 · CANARIES 研究（ADP 数据）</div>
-          <div class="evi-text">生成式 AI 普及以来，22–25 岁在最高暴露岗位的相对就业下滑 13–16%（软件开发类约 −20%）；收缩集中在"自动化型"而非"增强型"职业，且通过"不再招人"而非裁员发生。</div>
+          <div class="evi-text">生成式 AI 普及以来，22–25 岁在最高暴露岗位的相对就业下滑 13–16%（软件开发类约 −20%）；收缩集中在 AI"替人干活"的职业，而 AI"帮人干活"的职业保持稳定；且冲击通过"不再招新人"而非裁员发生。</div>
         </div>
         <div class="evi-num" style="color:var(--down)">−20%<small>22–25 岁开发者</small></div>
       </div>
@@ -635,7 +635,7 @@ footer {
       <div class="evi-row">
         <div>
           <div class="evi-src">ANTHROPIC 经济指数</div>
-          <div class="evi-text">真实使用高度集中于编程（计算机与数学类约占对话 1/3、企业接口近一半）；企业接口调用中约 75% 属"替人完成"而非"帮人完成"，且指令式占比持续上升。经可靠性折减后，估算对年劳动生产率的贡献约 0.6–1.0 个百分点。</div>
+          <div class="evi-text">真实使用高度集中于编程（计算机与数学类约占对话 1/3、企业接口近一半）；企业接口调用中约 75% 属"替人完成"而非"帮人完成"，且指令式占比持续上升。把"AI 有时会做错"折算进去后，估算它当前每年给劳动生产率添 0.6–1.0 个百分点——量级堪比 1990 年代末互联网带来的那波提速。</div>
         </div>
         <div class="evi-num">75%<small>企业调用为自动化</small></div>
       </div>
@@ -677,7 +677,7 @@ footer {
         <span class="phase-years">2029–2033</span>
       </div>
       <p class="phase-body" style="margin-bottom:6px;"><span class="chip chip-late">置信度 中高</span></p>
-      <p class="phase-body">周级任务达到可用可靠性，多智能体系统承担完整项目交付。中层的信息传递与协调职能被吃掉，组织显著扁平化；受监管行业进入"AI 干活 + 人签字"的稳态；结构化物理场景（仓储、产线、干线物流）自动化过半。<b>标志性事件：第一批"个位数员工、上亿美元收入"的公司成为常态而非新闻。</b></p>
+      <p class="phase-body">AI 能可靠完成一周长度的工作；多个 AI 分工协作，像一支小团队那样交付完整项目。中层的信息传递与协调职能被吃掉，组织显著扁平化；受监管行业进入"AI 干活 + 人签字"的稳态；结构化物理场景（仓储、产线、干线物流）自动化过半。<b>标志性事件：第一批"个位数员工、上亿美元收入"的公司成为常态而非新闻。</b></p>
     </div>
 
     <div class="card">
@@ -686,7 +686,7 @@ footer {
         <span class="phase-years">2033–2038</span>
       </div>
       <p class="phase-body" style="margin-bottom:6px;"><span class="chip chip-mid">置信度 中</span></p>
-      <p class="phase-body">机器人操作数据的飞轮见效，半结构化场景（商业清洁、后厨、零售补货、部分建筑工序）进入自动化射程。白领侧，"监督 AI"的岗位本身开始被 AI 审 AI 压缩。AI 素养如同今日的识字。<b>本阶段的主变量从技术切换为社会政策：再分配、工时、教育体系的改革速度，决定转型是有序还是撕裂。</b></p>
+      <p class="phase-body">机器人的"数据飞轮"（干得越多→动作数据越多→越聪明→能干更多）开始见效，半结构化场景（商业清洁、后厨、零售补货、部分建筑工序）进入自动化射程。白领侧，"监督 AI"的岗位本身开始被 AI 审 AI 压缩。AI 素养如同今日的识字。<b>本阶段的主变量从技术切换为社会政策：再分配、工时、教育体系的改革速度，决定转型是有序还是撕裂。</b></p>
     </div>
 
     <div class="card">
@@ -734,9 +734,9 @@ footer {
         <div class="role-detail" id="d-swe" role="region" aria-label="软件工程师 详情"><div><div class="role-inner">
           <p><b>现状。</b>"修改软件以纠正错误"已是全球 AI 使用量第一的单项任务；前沿团队的多数代码由 AI 生成。22–25 岁开发者就业自 2022 年底下滑约两成——而资深开发需求稳定甚至上升。这是"入口塌陷、顶部增值"的教科书样本。</p>
           <div class="tl">
-            <div class="tl-row"><span class="tl-year">0–3 年</span><span class="tl-text">从写代码转向审代码与编排智能体；初级增删改查岗位基本消失；"一人 + 智能体舰队"成为标配。</span></div>
+            <div class="tl-row"><span class="tl-year">0–3 年</span><span class="tl-text">从写代码转向审代码与编排智能体；只写基础功能的初级岗位基本消失；"一人 + 智能体舰队"成为标配。</span></div>
             <div class="tl-row"><span class="tl-year">3–7 年</span><span class="tl-text">杰文斯效应撑住总量：软件更便宜，世界要的软件更多。但"工程师"的定义变为"定义问题并验收系统的人"。</span></div>
-            <div class="tl-row"><span class="tl-year">7–12 年</span><span class="tl-text">AI 审 AI 成熟后，纯监督岗也开始压缩。存活位：架构、安全、领域建模、评估基建。</span></div>
+            <div class="tl-row"><span class="tl-year">7–12 年</span><span class="tl-text">AI 审 AI 成熟后，纯监督岗也开始压缩。存活位：架构、安全、领域建模，以及"评估基建"——给 AI 产出建一套自动判卷系统的能力。</span></div>
           </div>
           <div class="split">
             <p><span class="mini-label">交给 AI</span><span class="muted">实现、调试、测试、文档、常规重构、跨语言迁移。</span></p>
@@ -759,7 +759,7 @@ footer {
           <p><b>现状。</b>自然语言到查询到图表的链路已被打通，"发生了什么"级别的描述性分析接近零成本；会写查询语句正从技能变成默认配置。</p>
           <div class="tl">
             <div class="tl-row"><span class="tl-year">0–3 年</span><span class="tl-text">取数、报表、看板全面自动化；分析师的产出从"图表"变成"结论与反对意见"。</span></div>
-            <div class="tl-row"><span class="tl-year">3–7 年</span><span class="tl-text">因果推断、实验设计、数据治理成为人类主场；坏数据的嗅觉比查询能力值钱十倍。</span></div>
+            <div class="tl-row"><span class="tl-year">3–7 年</span><span class="tl-text">因果判断（分辨"A 导致 B"还是"A 和 B 只是碰巧一起发生"）、实验设计、数据治理成为人类主场；坏数据的嗅觉比查询能力值钱十倍。</span></div>
             <div class="tl-row"><span class="tl-year">7–12 年</span><span class="tl-text">独立分析师岗位大量并入业务决策岗——业务人自带 AI 分析能力，专职分析只在高复杂度领域留存。</span></div>
           </div>
           <div class="split">
@@ -787,7 +787,7 @@ footer {
             <div class="tl-row"><span class="tl-year">7–12 年</span><span class="tl-text">AI 深度参与 AI 研究本身；研究品味——选对问题的能力——成为最后的壁垒。</span></div>
           </div>
           <div class="split">
-            <p><span class="mini-label">交给 AI</span><span class="muted">调参、基线实现、消融实验执行、文献综述。</span></p>
+            <p><span class="mini-label">交给 AI</span><span class="muted">调参、基线复现、对照实验的执行、文献综述。</span></p>
             <p><span class="mini-label">留给人</span><span class="muted">问题选择、评估设计、数据策略、失败模式诊断。</span></p>
           </div>
           <p class="skill-line"><span class="skill-down">↓ 贬值</span> <span class="muted">手写训练代码、单一框架经验。</span></p>
@@ -863,7 +863,7 @@ footer {
         <div class="role-detail" id="d-design" role="region" aria-label="设计师 详情"><div><div class="role-inner">
           <p><b>现状。</b>生成式工具让"产出画面"变便宜，同时让"选对画面"变贵；设计与前端实现的边界正在被 AI 熔掉。</p>
           <div class="tl">
-            <div class="tl-row"><span class="tl-year">0–3 年</span><span class="tl-text">物料延展、常规界面生成化；设计师的杠杆从"画每一屏"转向"定义规则"——就像本报告所依据的这份设计规范：写对一份 token 与红线清单，胜过画一百张稿。</span></div>
+            <div class="tl-row"><span class="tl-year">0–3 年</span><span class="tl-text">物料延展、常规界面生成化；设计师的杠杆从"画每一屏"转向"定义规则"——就像本报告所依据的这份设计规范：写对一份设计规则与红线清单，胜过画一百张稿。</span></div>
             <div class="tl-row"><span class="tl-year">3–7 年</span><span class="tl-text">"设计工程师"合流职业成为主流；纯执行的视觉岗大幅收缩。</span></div>
             <div class="tl-row"><span class="tl-year">7–12 年</span><span class="tl-text">体验战略与品牌世界观构建是人的主场；审美判断的可解释化（说得清为什么好）成为核心竞争力。</span></div>
           </div>
@@ -966,7 +966,7 @@ footer {
           <span class="role-caret" aria-hidden="true"><svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M4 2l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
         </button>
         <div class="role-detail" id="d-doc" role="region" aria-label="医生 详情"><div><div class="role-inner">
-          <p><b>现状。</b>环境语音病历已大规模落地，医生的文书负担显著下降；影像 AI 以"辅助 + 医生签字"模式进入；诊断建议类 AI 在多项对照中表现亮眼，但责任与监管使其只能做副驾驶。同时，老龄化让医生总需求刚性上涨——这是"技术上可以 ≠ 制度上允许"的最佳案例。</p>
+          <p><b>现状。</b>诊室 AI 已能边听问诊边自动写好病历（业内称"环境语音病历"）并大规模落地，医生的文书负担显著下降；影像 AI 以"辅助 + 医生签字"模式进入；诊断建议类 AI 在多项对照中表现亮眼，但责任与监管使其只能做副驾驶。同时，老龄化让医生总需求刚性上涨——这是"技术上可以 ≠ 制度上允许"的最佳案例。</p>
           <div class="tl">
             <div class="tl-row"><span class="tl-year">0–3 年</span><span class="tl-text">文书、分诊、随访自动化，医生时间还给病人；拒用 AI 的医生开始被用 AI 的医生在效率与质量上拉开。</span></div>
             <div class="tl-row"><span class="tl-year">3–7 年</span><span class="tl-text">AI 预诊成为标准前置；医生角色偏向复杂决策、沟通与操作。</span></div>
@@ -993,12 +993,12 @@ footer {
           <p><b>现状。</b>记账、对账、报税准备的自动化率飞速上升，头部事务所都在重组初级岗位；但审计签字权是法定的责任沉淀点。</p>
           <div class="tl">
             <div class="tl-row"><span class="tl-year">0–3 年</span><span class="tl-text">交易级工作基本自动化，初级岗大幅缩编——这个行业的入口危机比法律更陡。</span></div>
-            <div class="tl-row"><span class="tl-year">3–7 年</span><span class="tl-text">持续审计（AI 实时监控全量交易）取代抽样审计；会计师转向鉴证判断与舞弊嗅觉。</span></div>
+            <div class="tl-row"><span class="tl-year">3–7 年</span><span class="tl-text">持续审计（AI 实时监控全量交易）取代抽样审计；会计师转向签字背书的判断与舞弊嗅觉。</span></div>
             <div class="tl-row"><span class="tl-year">7–12 年</span><span class="tl-text">财务职能并入"用 AI 的业务伙伴"；签字与复杂税务筹划留给人。</span></div>
           </div>
           <div class="split">
             <p><span class="mini-label">交给 AI</span><span class="muted">记账、对账、报表编制、底稿、常规申报。</span></p>
-            <p><span class="mini-label">留给人</span><span class="muted">签字责任、职业怀疑、复杂交易的会计判断、税务筹划、与监管对话。</span></p>
+            <p><span class="mini-label">留给人</span><span class="muted">签字责任、职业怀疑（先假设数字可能有假、逐一求证的本能）、复杂交易的会计判断、税务筹划、与监管对话。</span></p>
           </div>
           <p class="skill-line"><span class="skill-down">↓ 贬值</span> <span class="muted">分录与底稿产能、表格技巧。</span></p>
           <p class="skill-line"><span class="skill-up">↑ 升值</span> <span class="muted">数据与系统审计、舞弊分析、业务判断、AI 工具链质控。</span></p>
@@ -1025,7 +1025,7 @@ footer {
             <p><span class="mini-label">留给人</span><span class="muted">投资判断与逆向思考、独家信息网络、客户信任、风险责任。</span></p>
           </div>
           <p class="skill-line"><span class="skill-down">↓ 贬值</span> <span class="muted">建模产能、信息聚合。</span></p>
-          <p class="skill-line"><span class="skill-up">↑ 升值</span> <span class="muted">可追溯的判断记录、另类数据鉴别、客户关系、风险直觉。</span></p>
+          <p class="skill-line"><span class="skill-up">↑ 升值</span> <span class="muted">可追溯的判断记录、另类数据的鉴别（财报之外的非常规信号：卫星图里的停车场、招聘帖的数量）、客户关系、风险直觉。</span></p>
           <p class="strategy">策略：金融的残酷在于结果可量化——尽早建立可验证的个人判断记录，它比任何头衔都硬。</p>
         </div></div></div>
       </div>
@@ -1143,7 +1143,7 @@ footer {
           <span class="role-caret" aria-hidden="true"><svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M4 2l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
         </button>
         <div class="role-detail" id="d-mgr" role="region" aria-label="管理者 详情"><div><div class="role-inner">
-          <p><b>现状。</b>中层的三大传统职能——信息上传下达、进度协调、报告制作——正是 AI 最擅长的。管理幅度正在拉大，大型公司已在系统性砍层级。</p>
+          <p><b>现状。</b>中层的三大传统职能——信息上传下达、进度协调、报告制作——正是 AI 最擅长的。管理幅度（一个经理直接带多少人）正在拉大，大型公司已在系统性砍层级。</p>
           <div class="tl">
             <div class="tl-row"><span class="tl-year">0–3 年</span><span class="tl-text">汇报、纪要、排期、绩效初稿 AI 化；一个经理能带更多人。</span></div>
             <div class="tl-row"><span class="tl-year">3–7 年</span><span class="tl-text">组织扁平化成主流，纯协调型中层收缩三到五成；"管理智能体舰队"成为字面意义上的新一线管理。</span></div>
@@ -1171,7 +1171,7 @@ footer {
           <div class="tl">
             <div class="tl-row"><span class="tl-year">0–3 年</span><span class="tl-text">AI 承担筛查、记录、随访与危机初判，缓解人手短缺。</span></div>
             <div class="tl-row"><span class="tl-year">3–7 年</span><span class="tl-text">分层服务成形：轻度支持 AI 化、重度个案人类化；照护机器人进入辅助（搬运、监测）而非替代。</span></div>
-            <div class="tl-row"><span class="tl-year">7–12 年</span><span class="tl-text">人类照护成为明确的溢价服务；就业蓄水池角色强化。</span></div>
+            <div class="tl-row"><span class="tl-year">7–12 年</span><span class="tl-text">人类照护成为明确的溢价服务；作为"就业蓄水池"（能大量吸纳转岗人口的行业）的角色强化。</span></div>
           </div>
           <div class="split">
             <p><span class="mini-label">交给 AI</span><span class="muted">记录、排班、监测、轻度情绪支持、随访。</span></p>
@@ -1200,11 +1200,11 @@ footer {
           <span class="role-caret" aria-hidden="true"><svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M4 2l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
         </button>
         <div class="role-detail" id="d-trade" role="region" aria-label="技工 详情"><div><div class="role-inner">
-          <p><b>现状。</b>非标环境 + 持照要求 + 入户信任，构成三重护城河。技工短缺正推高时薪——这是未来十年被系统性低估的职业路径，相对社会地位大概率上升。</p>
+          <p><b>现状。</b>非标环境（每家每户的管线都长得不一样）+ 持照要求 + 入户信任，构成三重护城河。技工短缺正推高时薪——这是未来十年被系统性低估的职业路径，相对社会地位大概率上升。</p>
           <div class="tl">
             <div class="tl-row"><span class="tl-year">0–3 年</span><span class="tl-text">AI 成为超级学徒：诊断、规范查询、报价、接单；单兵效率显著提升，个体户能力接近小公司。</span></div>
             <div class="tl-row"><span class="tl-year">3–7 年</span><span class="tl-text">远程专家指导普及，一个老师傅同时带多个现场。</span></div>
-            <div class="tl-row"><span class="tl-year">7–20 年</span><span class="tl-text">机器人先进入标准化工序（预制构件、重复安装）；入户非标维修仍是人。真正的威胁在 12 年之后显现，且取决于操作数据飞轮——目前所有证据显示这条曲线明显慢于语言模型。</span></div>
+            <div class="tl-row"><span class="tl-year">7–20 年</span><span class="tl-text">机器人先进入标准化工序（预制构件、重复安装）；入户非标维修仍是人。真正的威胁在 12 年之后显现，且取决于前文说的机器人数据飞轮转多快——目前所有证据显示，这条曲线明显慢于语言模型。</span></div>
           </div>
           <div class="split">
             <p><span class="mini-label">交给 AI</span><span class="muted">诊断辅助、报价、排单、合规查询、客户沟通。</span></p>
@@ -1223,11 +1223,11 @@ footer {
           <span class="role-caret" aria-hidden="true"><svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M4 2l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
         </button>
         <div class="role-detail" id="d-logi" role="region" aria-label="物流 详情"><div><div class="role-inner">
-          <p><b>现状。</b>结构化环境是机器人的主场：仓储分拣已深度自动化；人形机器人正从演示走向部署，但已验证场景仍窄。无人出租车已在多城商业运营，干线卡车自动驾驶在测试走廊推进。<b>司机是就业总量意义上未来十五年最大的单一变数——各国合计数以千万计的岗位。</b></p>
+          <p><b>现状。</b>结构化环境（货架间距固定、流程固定的仓库与产线）是机器人的主场：仓储分拣已深度自动化；人形机器人正从演示走向部署，但已验证场景仍窄。无人出租车已在多城商业运营，干线卡车自动驾驶在测试走廊推进。<b>司机是就业总量意义上未来十五年最大的单一变数——各国合计数以千万计的岗位。</b></p>
           <div class="tl">
             <div class="tl-row"><span class="tl-year">0–3 年</span><span class="tl-text">仓储与产线标准工位持续机器换人；操作员转向机器人监督员，一人看多机。</span></div>
             <div class="tl-row"><span class="tl-year">3–7 年</span><span class="tl-text">干线物流部分无人化（枢纽到枢纽）；城配与最后一公里仍是人加辅助驾驶。</span></div>
-            <div class="tl-row"><span class="tl-year">7–12 年</span><span class="tl-text">"关灯工厂"扩面；蓝领岗位向设备运维与机器人技师迁移。</span></div>
+            <div class="tl-row"><span class="tl-year">7–12 年</span><span class="tl-text">"关灯工厂"（几乎无人、连灯都不用开的全自动工厂）扩面；蓝领岗位向设备运维与机器人技师迁移。</span></div>
           </div>
           <div class="split">
             <p><span class="mini-label">交给机器</span><span class="muted">搬运、分拣、标准装配、目视质检、干线驾驶。</span></p>
@@ -1246,10 +1246,10 @@ footer {
         <h3>正在出现的新职业</h3>
         <span class="card-note">方向比职位名可靠</span>
       </div>
-      <div class="skill-row"><b>智能体编排师。</b><span class="why">设计、调度、监控多智能体工作流——它之于智能体，如同运维之于云计算。</span></div>
+      <div class="skill-row"><b>智能体编排师。</b><span class="why">把大目标拆成 AI 能执行的小任务，派活、盯进度、验收——像带一支数字施工队的包工头。</span></div>
       <div class="skill-row"><b>评估工程师。</b><span class="why">定义"什么叫做对"，为 AI 产出建立可验证标准——可能是未来十年最被低估的职业。</span></div>
       <div class="skill-row"><b>AI 审计与合规官。</b><span class="why">各地 AI 立法落地正在批量制造的岗位群。</span></div>
-      <div class="skill-row"><b>数据策展人。</b><span class="why">高质量专有数据与专家演示数据的采集、清洗与治理。</span></div>
+      <div class="skill-row"><b>数据策展人。</b><span class="why">像博物馆策展人一样，从海量数据里挑出并整理好 AI 真正需要的那一小撮高质量样本。</span></div>
       <div class="skill-row"><b>机器人现场技师。</b><span class="why">部署、运维、示教——蓝领新贵，第三阶段的核心增量岗。</span></div>
       <div class="skill-row"><b>人机体验设计师。</b><span class="why">设计人与智能体之间的信任界面：何时打断、何时移交、如何问责。</span></div>
       <div class="skill-row"><b>责任承接人。</b><span class="why">各行业"为 AI 签字"的持照角色——旧职业的新形态，而非全新职业。</span></div>
@@ -1373,7 +1373,7 @@ footer {
         <h3>伦理判断</h3>
         <p><span class="mini-label">本质</span>不是背条款，是在灰色地带权衡多方利益、并愿意为决定署名的能力。</p>
         <p><span class="mini-label">练法</span>职级低时主动抢"没有标准答案"的决定（资源怎么分、坏消息怎么讲、规则要不要破例）——后果小的时候，恰是练习成本最低的时候。建一份决策日志：每个灰色决定写下当时的理由，三个月后回看，你会看见自己系统性的偏差。做重要决定前，找一个利益与你相反的人，把他的话听完。</p>
-        <p><span class="mini-label">AI 陪练</span>让 AI 轮流站在每个利益相关方的立场质询你的方案——给自己当红队。但署名与承担，必须是你。</p>
+        <p><span class="mini-label">AI 陪练</span>让 AI 轮流站在每个利益相关方的立场质询你的方案——给自己请一个专职挑刺的假想敌。但署名与承担，必须是你。</p>
       </div>
 
       <div class="train">
@@ -1401,7 +1401,7 @@ footer {
       <div class="sig-row"><span class="sig-num">05</span><div><span class="sig-name">保险公司开始承保 AI 自主决策责任。</span> <span class="sig-text">医疗、法律、驾驶任一领域出现，说明责任沉淀点开始移动——专业服务的推演需全面改写。</span></div></div>
       <div class="sig-row"><span class="sig-num">06</span><div><span class="sig-name">监管里程碑。</span> <span class="sig-text">首个获批的自主诊断 AI；无安全员干线卡车的常态化运营。</span></div></div>
       <div class="sig-row"><span class="sig-num">07</span><div><span class="sig-name">"个位数员工、上亿收入"公司的数量。</span> <span class="sig-text">组织形态变革的先行指标，直接预示中层与协调岗的命运。</span></div></div>
-      <div class="sig-row"><span class="sig-num">08</span><div><span class="sig-name">企业接口的自动化使用占比。</span> <span class="sig-text">目前约 75%，衡量"替人干"对"帮人干"的比例——它逼近 90% 时，增强叙事让位于替代叙事。</span></div></div>
+      <div class="sig-row"><span class="sig-num">08</span><div><span class="sig-name">企业接口的自动化使用占比。</span> <span class="sig-text">目前约 75%，衡量"替人干"对"帮人干"的比例——它逼近 90% 时，"AI 帮人"的故事就正式让位给"AI 替人"。</span></div></div>
       <div class="sig-row"><span class="sig-num">09</span><div><span class="sig-name">再分配政策的立法进度。</span> <span class="sig-text">数字税、主权 AI 基金、工时改革——决定第三阶段是有序转型还是社会撕裂。</span></div></div>
       <div class="sig-row"><span class="sig-num">10</span><div><span class="sig-name">你自己的上周。</span> <span class="sig-text">有多少小时在"审核 AI 产出"而非"亲手产出"？这是所有信号里最诚实的一个。</span></div></div>
     </div>
@@ -1416,8 +1416,8 @@ footer {
     <div class="card">
       <p class="muted"><b>可能错在太激进 · 可靠性长尾。</b>从 50% 可靠到 99.9% 可靠，难度不是线性的。METR 自己强调真实工作比测试任务更"脏"、模型表现更差。历史上自动驾驶的"最后 1%"耗了十五年——白领任务的长尾未必更短。</p>
       <p class="muted"><b>可能错在太激进 · 制度摩擦。</b>采购周期、组织惯性、工会、既得利益：技术可用与全面部署之间平均隔五到十年。放射科悖论已经演示过一次。</p>
-      <p class="muted"><b>可能错在太激进 · 杰文斯反转。</b>成本骤降引发需求爆发，软件、法律、医疗都可能"工作内容全变、从业人数反增"。自动柜员机普及后的二十年里，银行柜员总数不降反升——直到手机银行才真正逆转。</p>
-      <p class="muted"><b>可能错在太保守 · 曲线在加速。</b>翻倍周期已从七个月缩到约四个月。若"AI 加速 AI 研发"的递归飞轮兑现，本报告阶段三的内容会提前塞进阶段二，所有时间标签整体左移。</p>
+      <p class="muted"><b>可能错在太激进 · 杰文斯反转。</b>成本骤降引发需求爆发，软件、法律、医疗都可能"工作内容全变、从业人数反增"。最好的先例是取款机：美国银行柜员从 1970 年的约 30 万人涨到 2000 年代初的约 60 万——因为机器让单个网点只需约 13 名而非 20 名柜员，开网点变便宜了，银行把城市网点多开了四成（经济学家 Bessen 的数据）。柜员真正的下滑，要等到 2010 年代手机银行让人不再走进网点。</p>
+      <p class="muted"><b>可能错在太保守 · 曲线在加速。</b>翻倍周期已从七个月缩到约四个月。若"AI 帮着造出更强的 AI"这个自我加速的循环真的转起来，本报告阶段三的内容会提前塞进阶段二，所有时间标签整体左移。</p>
       <p class="muted"><b>可能错在框架之外 · 能源、芯片与地缘。</b>算力供给、电力瓶颈、供应链冲突，任何一个都能让曲线躺平数年。这类风险无法从劳动力数据里读出，只能保持敬畏。</p>
       <p class="muted" style="margin-top:6px;"><b>结论的正确用法：</b>不要把本报告当预言，把它当作一组带触发器的假设——第六章的信号变了，结论就该跟着变。</p>
     </div>
@@ -1431,7 +1431,7 @@ footer {
 
     <div class="card">
       <div class="card-title-row"><h3>学生 / 求职者</h3><span class="chip chip-soon">风险 · 入口塌陷</span></div>
-      <p class="muted">你的最大风险不是失业，是"从初级干起"的路径正在消失。对策：<b>①</b> 用 AI 做出超越年龄的作品集——作品大于学历的时代对你有利；<b>②</b> 在方向选择上配置一个"有责任沉淀点或物理属性"的底仓（医、法、工程、技工、照护）；<b>③</b> 把"带着 AI 工作"练成母语而非外语——你与上一代人的代差就在这里。另外，第五章末尾那五项恒定能力的练法，越早开始，复利越大。</p>
+      <p class="muted">你的最大风险不是失业，是"从初级干起"的路径正在消失。对策：<b>①</b> 用 AI 做出超越年龄的作品集——作品大于学历的时代对你有利；<b>②</b> 给自己留一个压舱石方向——有签字责任、或离不开双手的行当（医、法、工程、技工、照护）；<b>③</b> 把"带着 AI 工作"练成母语而非外语——你与上一代人的代差就在这里。另外，第五章末尾那五项恒定能力的练法，越早开始，复利越大。</p>
     </div>
     <div class="card">
       <div class="card-title-row"><h3>早期职业（0–5 年）</h3><span class="chip chip-soon">风险 · 与 AI 抢同层任务</span></div>
@@ -1439,7 +1439,7 @@ footer {
     </div>
     <div class="card">
       <div class="card-title-row"><h3>中期（5–15 年）</h3><span class="chip chip-mid">风险 · 纯协调型中层</span></div>
-      <p class="muted">你处在最佳位置，也可能站在最危险的位置——取决于你的价值是判断还是传话。对策：构建"深度 × 编排"的 π 型能力；<b>把隐性经验显性化</b>——写成方法、做成评估标准，这不会让你被替代，反而让你成为定义标准的人；持续积累"出了事，客户第一个打给你"的信任资产。</p>
+      <p class="muted">你处在最佳位置，也可能站在最危险的位置——取决于你的价值是判断还是传话。对策：打造"深度 × 编排"的组合：一门扎实到能给 AI 产出把关的专业深度，加上指挥一队 AI 干活的编排能力；<b>把隐性经验显性化</b>——写成方法、做成评估标准，这不会让你被替代，反而让你成为定义标准的人；持续积累"出了事，客户第一个打给你"的信任资产。</p>
     </div>
     <div class="card">
       <div class="card-title-row"><h3>资深 / 临近转型</h3><span class="chip chip-late">机会 · 经验的新变现</span></div>
@@ -1453,12 +1453,12 @@ footer {
     <div class="section-head"><h2>方法与来源</h2></div>
     <div class="card">
       <p class="endnote"><b>方法。</b>任务束框架（Autor 任务经济学）× 五变量时点判断 × 公开证据锚定。"重构度"为分析性推演值（到 2046 年岗位现有任务束被接管或实质改变的比例估计），非任何机构的测量数据；"重构启动"指该岗位约一半日常任务开始被明显改变的时间窗。所有时间边界都是模糊带。</p>
-      <p class="endnote"><b>主要来源（2026 年 8 月口径）。</b>METR 任务时长曲线研究及其 2026 年更新；斯坦福数字经济实验室 Brynjolfsson、Chandar、Chen《Canaries in the Coal Mine》及 Canaries 数据看板（ADP 工资单数据）；世界经济论坛《未来就业报告 2025》；Anthropic 经济指数系列报告（2025–2026）；TrendForce、Counterpoint 等机构的人形机器人出货与部署统计；各行业公开案例（客服自动化及其回调、法律 AI 渗透、环境语音病历普及、无人驾驶商业化进展等）。</p>
+      <p class="endnote"><b>主要来源（2026 年 8 月口径）。</b>METR 任务时长曲线研究及其 2026 年更新；斯坦福数字经济实验室 Brynjolfsson、Chandar、Chen《Canaries in the Coal Mine》及 Canaries 数据看板（ADP 工资单数据）；世界经济论坛《未来就业报告 2025》；Anthropic 经济指数系列报告（2025–2026）；哈佛—BCG 锯齿边界实验（Dell'Acqua 等，758 名顾问）；Bessen 关于取款机与银行柜员的研究；TrendForce、Counterpoint 等机构的人形机器人出货与部署统计；各行业公开案例（客服自动化及其回调、法律 AI 渗透、环境语音病历普及、无人驾驶商业化进展等）。</p>
       <p class="endnote"><b>使用与更新。</b>建议每六个月对照第六章的信号清单复核一次本报告；任何单一信号的显著变动，都应触发对应章节结论的重估。预测的价值不在于对，在于错得可以被及时发现。</p>
     </div>
     <footer>
       <span>工作的重构 · 二十年推演</span>
-      <span>2026.08 · V1.3 · 碱白系统</span>
+      <span>2026.08 · V1.4 · 碱白系统</span>
     </footer>
   </section>
 
