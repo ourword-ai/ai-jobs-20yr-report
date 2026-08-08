@@ -1,0 +1,28 @@
+# The Restructuring of Work (工作的重构)
+
+> how AI reshapes every kind of job, 2026–2046
+> AI × 职业的二十年推演（2026–2046）
+
+A twenty-year projection of how AI reshapes work, built on one idea: a job is a bundle of tasks, not a single thing. It grades twenty occupation clusters against five variables that decide when a task gets automated, lays out four phases from copilot to deep water, gives a five-minute exposure self-test, and ends with the signals to watch and an explicit list of where the projection could be wrong.
+
+一份 2026–2046 的二十年推演，起点只有一个判断：岗位是任务束，不是一个整体。用五个变量判断每项任务何时被自动化，推演 20 类职业、四个阶段（从副驾驶到深水区），给出五分钟暴露度自测、值得盯住的信号清单，并明写这份推演哪里可能是错的。
+
+## Read it
+
+- Site: https://ourword.ai/ai-jobs-20yr-report/
+- Every report has its own static page: https://ourword.ai/ai-jobs-20yr-report/i/<slug>/ (English) and https://ourword.ai/ai-jobs-20yr-report/zh/i/<slug>/ (中文)
+- Full text of everything, one file: https://ourword.ai/ai-jobs-20yr-report/llms-full.txt
+- All URLs: https://ourword.ai/ai-jobs-20yr-report/sitemap.xml
+- Part of OurWord AI: https://ourword.ai/
+
+## How it is built
+
+Hand-written. The projection hangs on named, checkable anchors rather than vibes: each occupation cluster is scored on digitisation, verifiability, liability and licensing, data availability and demand elasticity, and the report lists the signals that would falsify it.
+
+## Citing
+
+Cite this page with its version date shown at the top. It is a projection, not a forecast, and the section on where it could be wrong is part of the argument — quote it alongside any conclusion. Attribute to "工作的重构 (OurWord AI)".
+
+## Index (1 report)
+
+- [The Restructuring of Work](https://ourword.ai/ai-jobs-20yr-report/): A twenty-year projection of how AI reshapes work, built on one idea: a job is a bundle of tasks, not a single thing. It grades twenty occupation clusters against five variables that decide when a task
